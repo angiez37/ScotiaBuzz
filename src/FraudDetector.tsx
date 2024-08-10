@@ -15,9 +15,15 @@ const FraudDetector = (): JSX.Element => {
                         <h1 className="font-bebas-neue text-2xl font-black flex flex-col leading-none text-gray-800">
                             Scotia Fraud Risk Detector
                         </h1>
-                        <button className="bg-[#7081be]  mt-6  hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border  hover:border-[#7586c6] rounded">
-                            Upload Content
+                        <p className="mt-4">Upload Content or use Speech To Text</p>
+                        <div className="flex flex-row items-center">
+                        <button className="bg-[#f28500]  mt-6  hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border  hover:border-[#f28500] rounded">
+                            Upload
                         </button>
+                        <img src="audio.png" alt="audio" className="w-[30px] h-[30px] mt-5 ml-4"/>
+
+                        </div>
+                        
                     </div>
                     <textarea name="postContent" placeholder="Paste content..." rows={10} cols={40} className="w-[700px] border bg-gray-50 rounded-md p-6" />
                     <button onClick={() => setShowResult(true)} className="bg-transparent my-6 hover:bg-[#ff0000] text-black font-semibold hover:text-white py-2 px-4 border border-[#ff0000] hover:border-transparent rounded">

@@ -27,7 +27,6 @@ const Home = (): JSX.Element => {
                 Scotiabank & Tangerine Fraud Hub
             </h1></div>
 
-
             {!showResult && (
                 <>
                     <p className="text-lg text-center  flex flex-col leading-none ">
@@ -54,17 +53,11 @@ const Home = (): JSX.Element => {
                             </h1>
                         </div>
                     </div>
-
                     <div className="w-[800px] pb-20">
                         <ChartLine />
                     </div>
-
                 </div>
             )}
-
-
-
-
         </>
     );
 };
