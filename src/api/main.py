@@ -36,7 +36,9 @@ Message:
 
 Hi Customer,
 
-You have a pending E-transfer of $1000 dollars. This is an urgent reminder and after 3 days, the money will not be available. Please click this link to be directed to your bank page to accept your e-transfer now.
+You have a pending E-transfer of $1000 dollars. 
+This is an urgent reminder and after 3 days, the money will not be available. 
+Please click this link to be directed to your bank page to accept your e-transfer now.
 
 Best Regards,
 Scotiabank Team
