@@ -47,10 +47,17 @@ const Home = (): JSX.Element => {
             {showResult && (
                 <div className="px-20 flex flex-col align-center items-center justify-center">
                     <div className=" flex relative z-20 text-center items-center overflow-hidden ">
-                        <div className="container mx-auto px-6 flex items-center text-center relative pb-12">
-                            <h1 className="text-2xl font-black flex flex-col leading-none text-gray-800">
+                        <div className=" flex-col container mx-auto px-6 flex items-center text-center relative pb-12">
+                            <h1 className="text-2xl pb-6 font-black flex flex-col leading-none text-gray-800">
                                 Phishing Reports in Toronto
                             </h1>
+                            <select>
+                                <option>Toronto</option>
+                                <option>Mississauga</option>
+                                <option>Milton</option>
+                                <option>Halton</option>
+                                <option>Burlington</option>
+                            </select>
                         </div>
                     </div>
                     <div className="w-[800px] pb-20">
