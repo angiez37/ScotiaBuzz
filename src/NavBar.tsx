@@ -4,7 +4,7 @@ const Navbar = () => {
     const navItems = [
         { id: 1, text: 'Home' },
         { id: 2, text: 'Fraud Detector' },
-        { id: 3, text: 'Placeholder' },
+        { id: 3, text: 'Resources' },
     ];
 
     return (
