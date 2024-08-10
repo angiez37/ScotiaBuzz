@@ -35,12 +35,12 @@ const FraudDetector = (): JSX.Element => {
                         <h2 className="font-bebas-neue mt-6 text-2xl uppercase font-black flex flex-col leading-none text-[#ff0000]">
                             98.3% Risk of Fraud
                         </h2>
-                        <p className="text-md font-semibold sm:text-base text-black pt-4 max-w-md">
+                        <p className="text-md font-semibold sm:text-base text-black py-4 max-w-md">
                             Explanation
                         </p>
-                        <ul className="list-disc">
-                            <li>Multiple occurences of "urgent"</li>
-                            <li>Unverified email address and domain (scot1abank instead of scotiabank)</li>
+                        <ul className="list-disc py-4">
+                            <li className="pb-4">Multiple occurences of "urgent"</li>
+                            <li className="pb-4">Unverified email address and domain (scot1abank instead of scotiabank)</li>
                             <li>Requires you to click a link</li>
                         </ul>
                     </div>

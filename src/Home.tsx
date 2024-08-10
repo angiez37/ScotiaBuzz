@@ -26,24 +26,27 @@ const Home = (): JSX.Element => {
             <div className="flex justify-center py-6"><h1 className="text-3xl font-black flex flex-col leading-none text-gray-800">
                 Scotiabank & Tangerine Fraud Hub
             </h1></div>
-            <p className="text-lg text-center  flex flex-col leading-none ">
-                Please select the type of fraud to see recent activities.
-            </p>
+
 
             {!showResult && (
-                <div className="flex flex-wrap justify-center px-20">
-                    {cards.map(card => (
-                        <div className="p-4 max-w-sm">
-                            <button onClick={() => setShowResult(true)} className="bg-[#f28500] w-[270px] h-[270px] mt-6  hover:bg-[#f5aa4d] text-white font-semibold  py-2 px-4 border rounded">
-                                <span className="text-3xl">{card.text}</span>
-                            </button>
-                        </div>
-                    ))}
-                </div>
+                <>
+                    <p className="text-lg text-center  flex flex-col leading-none ">
+                        Please select the type of fraud to see recent activities.
+                    </p>
+                    <div className="flex flex-wrap justify-center px-20">
+                        {cards.map(card => (
+                            <div className="p-4 max-w-sm">
+                                <button onClick={() => setShowResult(true)} className="bg-[#f28500] w-[270px] h-[270px] mt-6  hover:bg-[#f5aa4d] text-white font-semibold  py-2 px-4 border rounded">
+                                    <span className="text-3xl">{card.text}</span>
+                                </button>
+                            </div>
+                        ))}
+                    </div>
+                </>
             )}
 
             {showResult && (
-                <div className="p-20 flex flex-col align-center items-center justify-center">
+                <div className="px-20 flex flex-col align-center items-center justify-center">
                     <div className=" flex relative z-20 text-center items-center overflow-hidden ">
                         <div className="container mx-auto px-6 flex items-center text-center relative pb-12">
                             <h1 className="text-2xl font-black flex flex-col leading-none text-gray-800">
@@ -52,7 +55,7 @@ const Home = (): JSX.Element => {
                         </div>
                     </div>
 
-                    <div className="w-[800px]">
+                    <div className="w-[800px] pb-20">
                         <ChartLine />
                     </div>
 
