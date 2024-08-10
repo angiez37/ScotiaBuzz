@@ -1,7 +1,6 @@
 // import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import NavBar from "./NavBar";
-import ChartLine from "./Chart";
 
 const FraudDetector = (): JSX.Element => {
     //const navigate = useNavigate()
@@ -16,7 +15,7 @@ const FraudDetector = (): JSX.Element => {
                         <h1 className="font-bebas-neue text-2xl font-black flex flex-col leading-none text-gray-800">
                             Scotia Fraud Risk Detector
                         </h1>
-                        <button onClick={() => setShowResult(true)} className="bg-[#7081be]  mt-6  hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border  hover:border-[#7586c6] rounded">
+                        <button className="bg-[#7081be]  mt-6  hover:bg-white text-white font-semibold hover:text-black py-2 px-4 border  hover:border-[#7586c6] rounded">
                             Upload Content
                         </button>
                     </div>

@@ -2,8 +2,6 @@
 import { useState } from "react";
 import NavBar from "./NavBar";
 import ChartLine from "./Chart";
-import { Select, Option } from "@material-tailwind/react";
-
 
 const Home = (): JSX.Element => {
     //const navigate = useNavigate()
